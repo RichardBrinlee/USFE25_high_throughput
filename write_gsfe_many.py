@@ -129,7 +129,7 @@ lattices = 3.21090000000005
 lattice_set_num = 134
 lattice_message_1 = 'variable latparam equal '
 lattice_message_2 = ' #variable\n\n'
-# Sets MoNb, MoTa, MoV, MoW, NbTa, NbV, NbW, TaV, TaW, VW
+
 # Type 1: Ta
 # Type 2: Nb
 # Type 3: V
