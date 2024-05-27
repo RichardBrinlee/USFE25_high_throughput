@@ -138,19 +138,19 @@ lattice_message_2 = ' #variable\n\n'
 
 # Working right to left on the elements
 #Fill the box with an element
-box_type = 'create_atoms 5 box\n'
+box_type = 'create_atoms 3 box\n'
 # Set the changes 1/4 of the box with the second element
-set_type_1 = 'set type 5 type/ratio 3 0.25 '
+set_type_1 = 'set type 5 type/ratio 1 0.25 '
 # Changes a third of the remaining box to the third element
-set_type_2 = 'set type 5 type/ratio 1 0.3333 '
+set_type_2 = 'set type 5 type/ratio 2 0.3333 '
 # Changes half of the remaining box to the last element 
-set_type_3 = 'set type 5 type/ratio 2 0.5 '
+set_type_3 = 'set type 5 type/ratio 4 0.5 '
 
 
 # Creates a file in the directery this file is located in
 file_python_original = os.path.dirname(os.path.abspath(__file__))
 # Names the file
-file_python_alloy = 'NbTaVW'
+file_python_alloy = 'MoNbTaV'
 file_python_use = f'{file_python_original}/{file_python_alloy}'
 
 changing_name = 1
