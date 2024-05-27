@@ -27,6 +27,7 @@ do
         cd ../
         if [ $p -eq $inner ]
         then   
+            # This finds the USFE and writes it to a file.
             result=$(awk 'BEGIN {print '"$avg_ufse"' / '"$p"'}')
             echo $i $result >> ../usfe.txt
             echo 'The usfe for' $i 'is:' $result
