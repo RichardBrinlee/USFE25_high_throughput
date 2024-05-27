@@ -1,7 +1,5 @@
 # High-throughput code to build and run many files
 
-## Lattice
-
 ## GSFE
 There are four files for working with GSFE write_gsfe_mono.py, write_gsfe_binary.py, crawler_batch.sh, and crawler_gsfe.sh.
 
