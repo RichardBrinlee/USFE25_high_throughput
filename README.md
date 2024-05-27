@@ -5,6 +5,9 @@
 ## GSFE
 There are four files for working with GSFE write_gsfe_mono.py, write_gsfe_binary.py, crawler_batch.sh, and crawler_gsfe.sh.
 
+## Required
+For these write files to work mlip.ini, lmp.batch, gsfe_curve.sh, and fitted.mtp are needed to be in the same folder that the write files are located at.
+
 ## Write Files
 The write_gsfe_mono.py and write_gsfe_binary.py will create the file structure in a way for the crawlers to navigate. The write_gsfe_mono.py will create a depth of 1 and create 20 different folders for the different intergers needed to be changed. The write_gsfe_binary.py is an example of how to change the concentraction of an element in the case of calculating 0.01 to 0.99 of a binary alloy it will create 99 folders for each concentract and each of those contain 20 subfolders.
 
