@@ -140,11 +140,11 @@ lattice_message_2 = ' #variable\n\n'
 #Fill the box with an element
 box_type = 'create_atoms 3 box\n'
 # Set the changes 1/4 of the box with the second element
-set_type_1 = 'set type 5 type/ratio 1 0.25 '
+set_type_1 = 'set type 3 type/ratio 1 0.25 '
 # Changes a third of the remaining box to the third element
-set_type_2 = 'set type 5 type/ratio 2 0.3333 '
+set_type_2 = 'set type 3 type/ratio 2 0.3333 '
 # Changes half of the remaining box to the last element 
-set_type_3 = 'set type 5 type/ratio 4 0.5 '
+set_type_3 = 'set type 3 type/ratio 4 0.5 '
 
 
 # Creates a file in the directery this file is located in
