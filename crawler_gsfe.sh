@@ -23,6 +23,7 @@ do
         done < "$file"
         test=${array[@]}
         max=$(echo $test | tr ' ' '\n' | sort -n | tail -1)
+        # Adds the max USFE from each folder.
         avg_ufse=$(awk 'BEGIN {print '"$avg_ufse"' + '"$max"'}')
         cd ../
         if [ $p -eq $inner ]
