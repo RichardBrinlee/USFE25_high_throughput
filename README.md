@@ -17,6 +17,6 @@ To edit how many alloys you are using you will need to add or remove set_type_..
 There are two types of crawlers crawler_batch.sh and crawler_gsfe.sh. Once the folder structure is created using python place these two files in the folder that was created. 
 Note the location should be not with the 20 subfolders but with the main folder contents. 
 Once inside the folder using the terminal call
-sh crawler_batch.sh to go through your folder contents and create the jobs. Note there is a limit on the jobs so change the outer varible and initial start to limit the amount of jobs created.
+sh crawler_batch.sh to go through your folder contents and create the jobs. Note there is a limit on the jobs so change the outer varible and initial start in both crawler files to limit the amount of jobs created.
 
 Once all the jobs are finished run the crawler_gsfe.sh file using sh crawler_gsfe.sh. This will comment on the terminal the USFE value of the alloy and also create a txt file in the folder.
