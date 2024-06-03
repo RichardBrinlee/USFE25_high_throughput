@@ -15,9 +15,9 @@ If you want to change the alloy to something different the below three lines is 
 
 box_type = 'create_atoms 5 box\n'
 
-set_type_1 = 'set type 5 type/ratio 4 '
+set_type_1 = 'set type 5 type/ratio 4 0.5'
 
-set_type_2 = 'set type 5 type/ratio 4 '
+set_type_2 = 'set type 5 type/ratio 2 0.5'
 
 
 The below line demonstrates how to use the above varibles to inset them into the lmp_0K file. You will want to are any addition set_type to the line and a lattice_set_num.
