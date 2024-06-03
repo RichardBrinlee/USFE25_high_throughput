@@ -18,7 +18,7 @@ box_type = 'create_atoms 5 box\n'
 set_type_1 = 'set type 5 type/ratio 4 '
 
 
-The below line demonstrates how to use the above varibles to inset them into the lmp_0K file. You will want to are any addition set_type to the line and a lattice_set_num.
+The below line demonstrates how to use the above variables to inset them into the lmp_0K file. You will want to are any addition set_type to the line and a lattice_set_num.
 
 full_message = f"{message_1}{box_type}{set_type_1}{changing} {lattice_set_num}{message_2}"
 
