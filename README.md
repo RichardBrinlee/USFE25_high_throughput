@@ -22,7 +22,7 @@ The below line demonstrates how to use the above variables to inset them into th
 
 full_message = f"{message_1}{box_type}{set_type_1}{changing} {lattice_set_num}{message_2}"
 
-The way the write_lattice.py is set up is to change the concentraction, you can change this by changing what goes into the changing variable or replace it with something else. You can also eliminate it by removing the variable and changing the below and having the concentrations hard coded.
+The way the write_lattice.py is set up is to change the concentraction, you can change this by changing the changing varible to a different variable. I would advice not editing what the changing does unless you want to change how the folder structure is created. You can also eliminate it by removing the variable and changing the below and having the concentrations hard coded.
 
 set_type_1 = 'set type 5 type/ratio 4 0.5'
 
