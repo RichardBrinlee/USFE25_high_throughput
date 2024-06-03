@@ -1,4 +1,7 @@
 # High-throughput code to build and run jobs to find the USFE
+## Lattice
+There are three files for building, submitting jobs, and obtaining the lattice parameters. They are write_lattice.py, crawler_min.sh, and crawler_lattice.sh.
+The write_lattice.py will create the folder structure for crawler_lattice.sh to crawl through and submit jobs. The crawler_min.sh will crawl through the file structure and activate the min.sh file and collect all of that data to a single txt file which the lattice parameter will be in the middle column.
 
 ## GSFE
 There are four files for working with GSFE write_gsfe_many.py, write_gsfe_binary.py, crawler_batch.sh, and crawler_gsfe.sh.
