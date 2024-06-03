@@ -7,14 +7,18 @@ The write_lattice.py will create the folder structure for crawler_lattice.sh to 
 The write_lattice.py needs min.sh, mlip.sh, lmp.batch, and fitted.mtp to be in the same folder as it. to edit the required files edit in this structure the top line below is the location of the file and its name, the second line copies that file to the desired location.
 
 source = f'{file_python_original}/lmp.batch'
+
 shutil.copy(source, file_inner)
 
 ## Changing the alloyes
 If you want to change the alloy to something different the below three lines is how you set up the first part. The box_type varible will change which allow is filled in the box first. The second and third will edit the compensition of the box of atoms.
 
 box_type = 'create_atoms 5 box\n'
+
 set_type_1 = 'set type 5 type/ratio 4 '
+
 set_type_2 = 'set type 5 type/ratio 4 '
+
 
 The below line demonstrates how to use the above varibles to inset them into the lmp_0K file. You will want to are any addition set_type to the line and a lattice_set_num.
 
