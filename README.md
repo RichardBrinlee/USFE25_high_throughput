@@ -1,9 +1,27 @@
 # High-throughput code to build and run jobs to find the USFE
-## Lattice
+# Lattice
 There are three files for building, submitting jobs, and obtaining the lattice parameters. They are write_lattice.py, crawler_min.sh, and crawler_lattice.sh.
 The write_lattice.py will create the folder structure for crawler_lattice.sh to crawl through and submit jobs. The crawler_min.sh will crawl through the file structure and activate the min.sh file and collect all of that data to a single txt file which the lattice parameter will be in the middle column.
 
-## GSFE
+## Required
+The write_lattice.py needs min.sh, mlip.sh, lmp.batch, and fitted.mtp to be in the same folder as it. to edit the required files edit in this structure the top line below is the location of the file and its name, the second line copies that file to the desired location.
+
+source = f'{file_python_original}/lmp.batch'
+shutil.copy(source, file_inner)
+
+## Changing the alloyes
+If you want to change the alloy to something different the below three lines is how you set up the first part. The box_type varible will change which allow is filled in the box first. The second and third will edit the compensition of the box of atoms.
+
+box_type = 'create_atoms 5 box\n'
+set_type_1 = 'set type 5 type/ratio 4 '
+set_type_2 = 'set type 5 type/ratio 4 '
+
+The below line demonstrates how to use the above varibles to inset them into the lmp_0K file. You will want to are any addition set_type to the line and a lattice_set_num.
+
+full_message = f"{message_1}{box_type}{set_type_1}{changing} {lattice_set_num}\n{set_type_2}{lattice_set_num}{message_2}"
+
+
+# GSFE
 There are four files for working with GSFE write_gsfe_many.py, write_gsfe_binary.py, crawler_batch.sh, and crawler_gsfe.sh.
 
 ## Required
