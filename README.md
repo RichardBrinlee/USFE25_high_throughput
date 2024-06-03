@@ -15,14 +15,16 @@ If you want to change the alloy to something different the below three lines is 
 
 box_type = 'create_atoms 5 box\n'
 
-set_type_1 = 'set type 5 type/ratio 4 0.5'
-
-set_type_2 = 'set type 5 type/ratio 2 0.5'
+set_type_1 = 'set type 5 type/ratio 4 '
 
 
 The below line demonstrates how to use the above varibles to inset them into the lmp_0K file. You will want to are any addition set_type to the line and a lattice_set_num.
 
-full_message = f"{message_1}{box_type}{set_type_1}{changing} {lattice_set_num}\n{set_type_2}{lattice_set_num}{message_2}"
+full_message = f"{message_1}{box_type}{set_type_1}{changing} {lattice_set_num}{message_2}"
+
+The way the write_lattice.py is set up is to change the concentraction, you can change this by changing what goes into the changing variable or replace it with something else. You can also eliminate it by removing the variable and changing the below and having the concentrations hard coded.
+
+set_type_1 = 'set type 5 type/ratio 4 0.5'
 
 
 # GSFE
