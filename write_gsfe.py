@@ -19,7 +19,7 @@ atom_style      atomic
 '''
 
 message_2 = '''variable        xl equal 0
-variable        xh equal 2
+variable        xh equal 3
 variable        yl equal 0
 variable        yh equal 2
 variable        zl equal 0
