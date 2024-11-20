@@ -87,12 +87,12 @@ jump lmp_0K.in loop"""
 # Type 3: V
 # Type 4: Mo
 # Type 5: W
-box_type = 'create_atoms 5 box\n'
-set_type = 'set type 5 type/ratio 4 '
+box_type = 'create_atoms 1 box\n'
+set_type = 'set type 1 type/ratio 2 '
 
 changing = 0.99
 file_python_original = os.path.dirname(os.path.abspath(__file__))
-file_python_alloy = 'MoW'
+file_python_alloy = 'NbTa'
 file_python_use = f'{file_python_original}/{file_python_alloy}'
 lattice_nums = -1
 lattice_set_num = 134
@@ -101,23 +101,21 @@ while changing > 0:
     p = 1
 
     changing_name = round(changing*100)
-    file_new = file_python_use + '/' +str(changing_name)
+    file_new = file_python_use + '/' + str(changing_name)
     os.makedirs(file_new)
     
-    file_inner = file_new + '/'+ str(p)
-    os.makedirs(file_inner)
-    f = open(file_inner + '/lmp_0k.in', 'w')
+    f = open(file_new + '/lmp_0k.in', 'w')
     full_message = f"{message_1}{box_type}{set_type}{changing} {lattice_set_num}{message_2}"
     f.write(full_message)
     f.close()
     source = f'{file_python_original}/lmp.batch'
-    shutil.copy(source, file_inner)
+    shutil.copy(source, file_new)
     source = f'{file_python_original}/mlip.ini'
-    shutil.copy(source, file_inner)
+    shutil.copy(source, file_new)
     source = f'{file_python_original}/fitted.mtp'
-    shutil.copy(source, file_inner)
+    shutil.copy(source, file_new)
     source = f'{file_python_original}/min.sh'
-    shutil.copy(source, file_inner)
+    shutil.copy(source, file_new)
     p += 1
 
     changing = round(changing - 0.01, 2)
