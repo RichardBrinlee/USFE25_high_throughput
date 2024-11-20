@@ -6,5 +6,7 @@ while [ $i -le 99 ]
 do
     sbatch lmp.batch
     ((i++))
-    cd ../$i
+    if [ $i -le 99 ]; then
+        cd ../$i
+    fi
 done
