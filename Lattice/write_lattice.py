@@ -104,7 +104,7 @@ while changing > 0:
     file_new = file_python_use + '/' + str(changing_name)
     os.makedirs(file_new)
     
-    f = open(file_new + '/lmp_0k.in', 'w')
+    f = open(file_new + '/lmp_0K.in', 'w')
     full_message = f"{message_1}{box_type}{set_type}{changing} {lattice_set_num}{message_2}"
     f.write(full_message)
     f.close()
