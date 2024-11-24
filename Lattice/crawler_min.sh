@@ -7,7 +7,7 @@ do
     # Run the min.sh script in each directory
     sh min.sh
 
-    # fine the name of the directory
+    # find the name of the directory
     dir=$(basename `pwd`)
 
     # Extract the second column from min_aE and append it to lattice.txt
