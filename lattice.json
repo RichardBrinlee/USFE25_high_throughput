@@ -1,0 +1,12 @@
+{
+    "MoNb": [[1,2,3], "create_atoms 2 box\n", "set type 2 type/ratio 4 "],
+    "MoTa": [[1.2,3], "create_atoms 1 box\n", "set type 1 type/ratio 4 "],
+    "MoV": [[1,2,3], "create_atoms 3 box\n", "set type 3 type/ratio 4 "],
+    "MoW": [[1,2,3], "create_atoms 5 box\n", "set type 5 type/ratio 4 "],
+    "NbTa": [[1,2,3], "create_atoms 1 box\n", "set type 1 type/ratio 2 "],
+    "NbV": [[1,2,3], "create_atoms 3 box\n", "set type 3 type/ratio 2 "],
+    "NbW": [[1,2,3], "create_atoms 5 box\n", "set type 5 type/ratio 2 "],
+    "TaV": [[1,2,3], "create_atoms 3 box\n", "set type 3 type/ratio 1 "],
+    "TaW": [[1,2,3], "create_atoms 5 box\n", "set type 5 type/ratio 1 "],
+    "VW": [[1,2,3], "create_atoms 5 box\n", "set type 5 type/ratio 3 "]
+}
