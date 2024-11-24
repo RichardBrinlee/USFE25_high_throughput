@@ -1,7 +1,8 @@
 import json
+import os
 
 # Path to the JSON file
-json_file_path = '/Users/richard/Documents/Research/Testing/lattice.json'
+json_file_path = os.path.join(os.path.dirname(__file__), 'lattice.json')
 
 # Read the JSON file
 with open(json_file_path, 'r') as file:
@@ -12,7 +13,7 @@ file_types = ["MoNb", "MoTa", "MoV", "MoW", "NbTa", "NbV", "NbW", "TaV", "TaW", 
 
 for file_type in file_types:
     # Path to the text file
-    text_file_path = f'/Users/richard/Documents/Research/Testing/{file_type}.txt'
+    text_file_path = os.path.join(os.path.dirname(__file__), f'{file_type}.txt')
     print(text_file_path)
 
     # Read the text file
