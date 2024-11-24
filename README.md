@@ -1,7 +1,7 @@
 # High-throughput code to build and run jobs to find the USFE
 # Lattice
 There are three files for building, submitting jobs, and obtaining the lattice parameters. They are write_lattice.py, crawler_min.sh, and crawler_lattice.sh.
-The write_lattice.py will create the folder structure for crawler_lattice.sh to crawl through and submit jobs. The crawler_min.sh will crawl through the file structure and activate the min.sh file and collect all of that data to a single txt file.
+The write_lattice.py will create the folder structure for crawler_lattice.sh to crawl through and submit jobs. The crawler_min.sh will crawl through the file structure and activate the min.sh file and collect all of the lattice parameters to a single txt file.
 
 ## Required
 The write_lattice.py needs min.sh, mlip.sh, lmp.batch, and fitted.mtp to be in the same folder as it. to edit the required files edit in this structure the top line below is the location of the file and its name, the second line copies that file to the desired location.
