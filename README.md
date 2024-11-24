@@ -49,4 +49,4 @@ sh crawler_batch.sh to go through your folder contents and create the jobs. Note
 Once all the jobs are finished run the crawler_gsfe.sh file using sh crawler_gsfe.sh. This will comment on the terminal the USFE value of the alloy and also create a txt file in the folder.
 
 ## Json
-write_gsfe_json.py and lattice.json if you want to create many different types at the same time.
+write_gsfe_json.py and lattice.json if you want to create many different types at the same time. edit_json.py is for fast editing the lattice.json with the lattice parameters.
