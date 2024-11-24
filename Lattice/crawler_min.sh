@@ -13,7 +13,6 @@ do
     # Extract the second column from min_aE and append it to {directory name}.txt
     awk '{print $2}' min_aE >> ../$dir.txt
 
-    # add the i
     ((i++))
     cd ../$i
 done
